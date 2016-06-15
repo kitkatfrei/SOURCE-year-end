@@ -137,7 +137,7 @@ body {
 
 p {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
   font-family: Roboto, sans-serif;
   color: #606060;
   line-height: 1.4;
@@ -23418,7 +23418,7 @@ fieldset[disabled] .btn-ig-bg {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/mockup/la-skyline-7.jpg) no-repeat;
+  background: url(../img/1920x1080/Empire-State-Building.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -27677,7 +27677,7 @@ fieldset[disabled] .btn-ig-bg {
 .footer-v7 {
   position: relative;
   z-index: 1;
-  background: url(../../assets/img/mockup/macbook-work.jpg) no-repeat;
+  background: url(../../assets/img/1920x1080/15.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -32840,7 +32840,7 @@ fieldset[disabled] .btn-ig-bg {
   float: left;
   border: none;
   padding: 0;
-  margin: 50px 0 15px;
+  margin: 29px 0;
 }
 
 .header-vertical .navbar-toggle .toggle-icon {
@@ -32944,7 +32944,7 @@ fieldset[disabled] .btn-ig-bg {
 
 .header-vertical .navbar-logo .navbar-logo-img {
   display: inline-block;
-  width: 135px;
+  width: 85px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
@@ -40627,6 +40627,9 @@ fieldset[disabled] .btn-ig-bg {
 
 .line-height-base {
   line-height: 1.4;
+}
+.line-height-1-5 {
+    line-height: 1.5;
 }
 
 .line-height-2 {
