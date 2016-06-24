@@ -24,6 +24,7 @@
 <!-- BEGIN THEME PLUGINS STYLE -->
 <link href="assets/plugins/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 <link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/rev-slider/css/settings.css" rel="stylesheet" type="text/css">
 <link href="assets/plugins/rev-slider/css/layers.css" rel="stylesheet" type="text/css">
@@ -36,7 +37,7 @@
 <!-- END THEME STYLES -->
 
 <!-- THEME -->
-<link href="assets/css/theme/dark.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/theme/base.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/theme/blue-grey.css" rel="stylesheet" type="text/css" id="style-color"/>
 <!-- END THEME -->
 
@@ -636,7 +637,7 @@ This year boasted a variety of new initiatives, including the SOURCE Summit, SOU
                                 <li><i class="lists-item-element fa fa-angle-right"></i> <a href="#">Tellus velit vulputate augue</a></li>
                             </ul>
                         </div>
-                        <button type="button" class="btn-base-bg btn-base-sm radius-3">Read More</button>
+                        <a id="click-modal-1" href="#feature1"><button type="button" class="btn-base-bg btn-base-sm radius-3">Read More</button></a>
                     </div>
                     <!-- End Vertical Center Align -->
                 </div>
@@ -1096,6 +1097,19 @@ This year boasted a variety of new initiatives, including the SOURCE Summit, SOU
         <!-- End Clients v1 -->
     </div>
     <!--========== END PAGE CONTENT ==========-->
+    <!--========== MODALS ==========-->
+    <div id="feature1">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-feature1"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
+    <!--========== END MODALS ==========-->
+    
 
     <!--========== FOOTER ==========-->
     <footer id="footer" class="footer">
@@ -1347,6 +1361,10 @@ This year boasted a variety of new initiatives, including the SOURCE Summit, SOU
 <script type="text/javascript" src="assets/scripts/components/rev-slider.js"></script>
 <script type="text/javascript" src="assets/scripts/components/progress-bar.js"></script>
 <script type="text/javascript" src="assets/scripts/components/owl-carousel.js"></script>
+<script type="text/javascript" src="assets/scripts/components/animatedModal.min.js"></script>
+<script>
+  $("#click-modal-1").animatedModal();
+</script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <!--========== END JAVASCRIPTS ==========-->
 </body>
