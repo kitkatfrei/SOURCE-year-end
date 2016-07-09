@@ -16,10 +16,36 @@
     .p-truncate {
         display: none;
     }
+    .col-letter-img img {
+        max-width: 75%;
+        display: inline-block;
+        margin-left: -150px;
+    }
+    .col-letter-img {
+        text-align: center;
+    }
 }
 @media (max-width: 991px) {
     .header-section-scroll .navbar-logo .navbar-logo-img {
         width: 80px;
+    }
+    .col-letter-img {
+        text-align: center;
+    }
+    .col-letter-img img {
+        max-width: 75%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .col-xxs-12 {
+        width: 100%;
+    }
+}
+@media (min-width: 600px) {
+    .extra-letter-margin {
+        margin-bottom: 20px;
     }
 }
 .btn-read-more {
@@ -47,4 +73,7 @@
 }
 .clients-center {
     text-align: center;
+}
+.letter-more div.col-sm-6 {
+    padding-left: 0;
 }

@@ -26,6 +26,18 @@ var HeaderSectionScroll = function() {
                 }
             }
         });
+        $('.begin-button').on('click', function(event) {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[href' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 0
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
 
         // Navbar Collapse On Scroll
         $(window).scroll(function() {
