@@ -351,3 +351,7 @@ var App = function() {
 $(document).ready(function() {
     App.init();
 });
+$( "#client-more" ).click(function() {
+    $(" #client-more").slideUp();
+    $( ".hidden-clients" ).fadeIn();
+});

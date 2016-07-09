@@ -1,0 +1,50 @@
+.signature h3 {
+    margin: 0 0 5px;
+}
+.letter-managers {
+    padding-bottom: 20px;
+}
+.equal-height-my-year {
+    height: 265;
+}
+@media (max-width: 1199px) {
+    .p-reg {
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .p-truncate {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .header-section-scroll .navbar-logo .navbar-logo-img {
+        width: 80px;
+    }
+}
+.btn-read-more {
+    font-weight: 500;
+}
+.process-4-5 {
+    padding-top: 40px;
+}
+.counter-stats-padding {
+    padding-bottom: 25px;
+}
+.center-expand-clients {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.tab-pane {
+    margin-bottom: 25px;
+}
+.hidden-button {
+    display: none;
+}
+.hidden-clients {
+    display: none;
+}
+.clients-center {
+    text-align: center;
+}
