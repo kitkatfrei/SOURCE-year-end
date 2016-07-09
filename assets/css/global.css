@@ -137,7 +137,7 @@ body {
 
 p {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 300;
   font-family: Roboto, sans-serif;
   color: #606060;
   line-height: 1.4;
@@ -23418,14 +23418,26 @@ fieldset[disabled] .btn-ig-bg {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/1920x1080/Empire-State-Building.jpg) no-repeat;
+  background: url(../img/SOURCE/mock-empire.png) no-repeat;
   background-size: cover;
   background-position: center center;
 }
+.promo-block-v3:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom,#4e8fa9,#fff);
+		opacity: .6; 
+  }
 
 .promo-block-v3 .promo-block-v3-title {
   font-size: 70px;
+  font-weight: 600;
   color: #fff;
+  margin-bottom: 0;
 }
 
 .promo-block-v3 .promo-block-v3-subtitle {
@@ -27677,7 +27689,7 @@ fieldset[disabled] .btn-ig-bg {
 .footer-v7 {
   position: relative;
   z-index: 1;
-  background: url(../../assets/img/1920x1080/15.jpg) no-repeat;
+  background: url(../../assets/img/mockup/macbook-work.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -31408,7 +31420,7 @@ fieldset[disabled] .btn-ig-bg {
   display: block;
   float: none;
   text-align: center;
-  margin: 40px 25px;
+  margin: 5px 25px;
 }
 
 .header-section-scroll .navbar-logo .navbar-logo-wrap {
@@ -31422,7 +31434,7 @@ fieldset[disabled] .btn-ig-bg {
 
 .header-section-scroll .navbar-logo .navbar-logo-img {
   display: inline-block;
-  width: 85px;
+  width: 180px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
@@ -32840,7 +32852,7 @@ fieldset[disabled] .btn-ig-bg {
   float: left;
   border: none;
   padding: 0;
-  margin: 29px 0;
+  margin: 50px 0 15px;
 }
 
 .header-vertical .navbar-toggle .toggle-icon {
@@ -32944,7 +32956,7 @@ fieldset[disabled] .btn-ig-bg {
 
 .header-vertical .navbar-logo .navbar-logo-img {
   display: inline-block;
-  width: 85px;
+  width: 135px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
@@ -38944,7 +38956,8 @@ fieldset[disabled] .btn-ig-bg {
 }
 
 .bg-color-dark {
-  background: #34343c !important;
+  background: #3a3a44 !important; 
+/* CHANGED */
 }
 
 .bg-color-dark-light {
@@ -40627,9 +40640,6 @@ fieldset[disabled] .btn-ig-bg {
 
 .line-height-base {
   line-height: 1.4;
-}
-.line-height-1-5 {
-    line-height: 1.5;
 }
 
 .line-height-2 {
