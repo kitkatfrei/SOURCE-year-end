@@ -77,3 +77,9 @@
 .letter-more div.col-sm-6 {
     padding-left: 0;
 }
+.article-modal {
+    display: none;
+}
+.margin-b-15 {
+    margin-bottom: 15px;
+}
