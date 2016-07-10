@@ -26,6 +26,7 @@
 <!-- BEGIN THEME PLUGINS STYLE -->
 <link href="assets/plugins/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="assets/css/iconate.css">
 <link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/dzsparallaxer/dzsparallaxer.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
@@ -278,7 +279,7 @@
 
                         <p>All my life I have been a hard worker. I used to think that as long I studied enough or practiced enough then I would be immune to failure. I approached every task timidly, yet diligently because I never wanted to do anything wrong. I came to Claremont Mckenna with the assumption that as long I put effort into every task I was assigned, I could not fail. SOURCE challenged this assumption.<span class="p-truncate">..</span></p>
                         <p class="p-reg">My Lead Consultant opened my first SOURCE one-on-one meeting, “Okay Lili, this meeting is going to be very relaxed, we are just going to talk about your goals for this year”. At the time, the idea of a ‘relaxed goal-setting meeting’ was an oxymoron. I had always avoided setting goals because it offered a tangible opportunity to fail. This supposedly, “short and relaxed” meeting ran for nearly an hour. Though my goals sounded something like, “I guess I should speak up more, sit up straighter and be a little more confident”, this meeting was monumental for me. It was the first time...</p>
-                        <button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button>
+                        <a id="my-first-button" href="#my-first-year-modal"><button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button></a>
                     </div>
                     <div class="col-sm-6 col-sm-pull-6">
                         <!-- End Team v2 -->
@@ -388,7 +389,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="center-expand-clients"><button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm" id="client-more">Read More <span class="fa fa-arrow-circle-down"></span></button></div>
+                                    <div class="center-expand-clients"><button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm" id="client-more">Read More<span class="fa fa-arrow-circle-down"></span></button></div>
                                     <div class="hidden-clients">
                                         <div role="tabpanel" class="tab-pane client-hidden active" id="tab-v3-2">
                                             <img class="img-responsive" src="assets/img/SOURCE/team/tbi-team.jpg" alt="">
@@ -488,7 +489,7 @@
                         <div class="heading-v1 margin-b-15">
                             <h2 class="heading-v1-title">CTEC</h2>
                             <p class="heading-v1-subtitle">By Anna Z</p>
-                            <div id="client-spotlight-modal" class="read-time">
+                            <div id="client-spotlight-modal-time" class="read-time">
                                 <div>
                                     <span class="eta"></span> <span class="word-count"></span><span> (words)</span>
                                 </div>
@@ -498,7 +499,7 @@
                         <p class="p-reg">Every two weeks for the past two years, my SOURCE team and I made our way down to the LA County Fairgrounds for our client meeting with the Career and Technical Education Center. CTEC, a program of The Learning Centers at Fairplex, provides year-round educational programs for high school students in a variety of vocational skills that prepare them for real world careers and professional success. Each year CTEC touches hundreds of students’ lives in their classrooms, but as I’ve learned in my time at SOURCE, their impact stretches far beyond the walls of The Learning Centers.</p>
                         <p class="p-truncate">Every two weeks for the past two years, my SOURCE team and I made our way down to the LA County Fairgrounds for our client meeting with the Career and Technical Education Center. CTEC, a program of The Learning Centers at Fairplex, provides year-round educational programs for high school students in a variety of vocational skills that prepare them for real world careers and professional success. Each year CTEC touches hundreds of students’ lives...</p>
                         <p class="p-reg">A guiding tenet of CTEC’s mission is to equip its students to make a positive difference in their communities. They certainly meet this goal through their core programs. In 2014, the SOURCE team conducted a program impact analysis, and my team was able to visit classes and distribute surveys to students...</p>
-                        <button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button>
+                        <a id="client-spotlight-button" href="#client-spotlight-modal"><button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button></a>
                         
                     </div>
                     <div class="col-sm-6">
@@ -544,7 +545,7 @@
                         <div class="heading-v1 margin-b-15">
                             <h2 class="heading-v1-title">Nonprofit Brownbags Speaker Series</h2>
                             <p class="heading-v1-subtitle">By Ethan</p>
-                            <div id="brownbags-modal" class="read-time">
+                            <div id="brownbags-modal-time" class="read-time">
                                 <div>
                                     <span class="eta"></span> <span class="word-count"></span><span> (words)</span>
                                 </div>
@@ -552,7 +553,7 @@
                         </div>
                         <!-- End Heading v1 -->
                         <p>Since its launch last year, SOURCE Nonprofit Brown Bags (NBBs) have grown into a strong, thriving program that various stakeholders in the community beyond SOURCE have invested themselves in. These monthly luncheons provide a safe space for nonprofits to share ideas and solutions, and hope to inspire collaboration within our community to  Further capitalize on the resources we share...</p>
-                        <button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button>
+                        <a id="brownbags-modal-button" href="#brownbags-modal"><button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button></a>
                         
                     </div>
                     <div class="col-sm-6 col-sm-pull-6">
@@ -598,7 +599,7 @@
                         <div class="heading-v1 margin-b-15">
                             <h2 class="heading-v1-title">SOURCE Symposium 2016</h2>
                             <p class="heading-v1-subtitle">By Vanessa Liu</p>
-                            <div id="symposium-modal" class="read-time">
+                            <div id="symposium-modal-time" class="read-time">
                                 <div>
                                     <span class="eta"></span> <span class="word-count"></span><span> (words)</span>
                                 </div>
@@ -607,7 +608,7 @@
                         <!-- End Heading v1 -->
                         <p>This year, SOURCE hosted its first ever year-end Symposium to showcase and celebrate SOURCE's impact in the community. The SOURCE Symposium took place the morning of April 29th on Claremont McKenna’s campus, and featured presentations from our seven SOURCE teams on the projects they worked on and the impact generated for our nonprofit community.</p>
                         <p class="p-reg">Our teams worked with staff from Deloitte, including CMC alum Chris Brandt ,a Partner at Deloitte, to craft the most engaging and effective presentations for our audience. These presentations not only served as a formal closure to our client relationships, but also provided educational content for other nonprofit staff who face similar challenges and...</p>
-                        <button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button>
+                        <a id="symposium-modal-button" href="#symposium-modal"><button type="button" class="btn-read-more btn-base-bg-slide btn-slide btn-slide-center-v1 btn-base-sm">Read More</button></a>
                         
                     </div>
                     <div class="col-sm-6">
@@ -771,17 +772,45 @@
         </div>
         <!-- End Clients v1 -->
         <!-- MODALS -->
-        <div class="article-modal my-year-with-source-modal">
-            {% include my-year-with-source-modal.html %}
+        <div id="my-first-year-modal" class="article-modal my-year-with-source-modal">
+            <div class="col-sm-12 remove-center">
+                <span id="btn-close-modal" class="close-my-first-year-modal"> 
+                    <i class="fa fa-times-circle fa-custom-lg"></i>
+                </span>
+            </div>
+            <div class="modal-row extra-letter-margin">
+                {% include my-year-with-source-modal.html %}
+            </div>
         </div>
-        <div class="article-modal client-spotlight-modal">
-            {% include client-spotlight-modal.html %}
+        <div id="client-spotlight-modal" class="article-modal client-spotlight-modal">
+            <div class="col-sm-12 remove-center">
+                <span id="btn-close-modal" class="close-client-spotlight-modal"> 
+                    <i class="fa fa-times-circle fa-custom-lg"></i>
+                </span>
+            </div>
+            <div class="modal-row extra-letter-margin">
+                {% include client-spotlight-modal.html %}
+            </div>
         </div>
-        <div class="article-modal brownbags-modal">
-            {% include brownbags-modal.html %}
+        <div id="brownbags-modal" class="article-modal brownbags-modal">
+            <div class="col-sm-12 remove-center">
+                <span id="btn-close-modal" class="close-brownbags-modal"> 
+                    <i class="fa fa-times-circle fa-custom-lg"></i>
+                </span>
+            </div>
+            <div class="modal-row extra-letter-margin">
+                {% include brownbags-modal.html %}
+            </div>
         </div>
-        <div class="article-modal symposium-modal">
-            {% include symposium-modal.html %}
+        <div id="symposium-modal" class="article-modal symposium-modal">
+            <div class="col-sm-12 remove-center">
+                <span id="btn-close-modal" class="close-symposium-modal"> 
+                    <i class="fa fa-times-circle fa-custom-lg"></i>
+                </span>
+            </div>
+            <div class="modal-row extra-letter-margin">
+                {% include symposium-modal.html %}
+            </div>
         </div>
         <!-- CONTACT -->
         <section id="contact">
@@ -797,7 +826,7 @@
                             <form action="#" method="post" class="subscribe-form input-group footer-v7-form-group">
                                 <input type="text" class="form-control footer-v7-form radius-3" name="email" placeholder="Your e-mail">
                                 <span class="input-group-btn padding-lr-10">
-                                    <button class="btn-base-bg btn-base-md radius-3" type="submmit">Notify me</button>
+                                    <button class="btn-base-bg btn-base-md radius-3" type="submit">Notify me</button>
                                 </span>
                             </form>
                             <!-- End Input Group -->
@@ -845,7 +874,9 @@
 <script type="text/javascript" src="assets/plugins/jquery.equal-height.js"></script>
 <script type="text/javascript" src="assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery.noty.min.js"></script>
-<script src="assets/plugins/readingTime.js"></script>
+<script type="text/javascript" src="assets/plugins/readingTime.js"></script>
+<script type="text/javascript" src="assets/plugins/animatedModal.js"></script>
+<script type="text/javascript" src="assets/plugins/iconate.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 
 <!-- PAGE LEVEL SCRIPTS -->

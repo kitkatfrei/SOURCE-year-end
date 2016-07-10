@@ -364,14 +364,51 @@ $('div.my-year-with-source-modal').readingTime({
     wordCountTarget: $('#my-year-modal').find('.word-count'),
 });
 $('div.client-spotlight-modal').readingTime({
-    readingTimeTarget: $('#client-spotlight-modal').find('.eta'),
-    wordCountTarget: $('#client-spotlight-modal').find('.word-count'),
+    readingTimeTarget: $('#client-spotlight-modal-time').find('.eta'),
+    wordCountTarget: $('#client-spotlight-modal-time').find('.word-count'),
 });
 $('div.brownbags-modal').readingTime({
-    readingTimeTarget: $('#brownbags-modal').find('.eta'),
-    wordCountTarget: $('#brownbags-modal').find('.word-count'),
+    readingTimeTarget: $('#brownbags-modal-time').find('.eta'),
+    wordCountTarget: $('#brownbags-modal-time').find('.word-count'),
 });
 $('div.symposium-modal').readingTime({
-    readingTimeTarget: $('#symposium-modal').find('.eta'),
-    wordCountTarget: $('#symposium-modal').find('.word-count'),
+    readingTimeTarget: $('#symposium-modal-time').find('.eta'),
+    wordCountTarget: $('#symposium-modal-time').find('.word-count'),
+});
+
+$("#my-first-button").click(function() {
+    $("#my-first-year-modal").removeClass('article-modal');
+});
+$("#my-first-button").animatedModal({
+    modalTarget:'my-first-year-modal',
+    animatedIn:'fadeInUp',
+    animatedOut:'fadeOutDown',
+    color:'#fff'
+});
+$("#client-spotlight-button").click(function() {
+    $("#client-spotlight-modal").removeClass('article-modal');
+});
+$("#client-spotlight-button").animatedModal({
+    modalTarget:'client-spotlight-modal',
+    animatedIn:'fadeInUp',
+    animatedOut:'fadeOutDown',
+    color:'#fff'
+});
+$("#brownbags-modal-button").click(function() {
+    $("#brownbags-modal").removeClass('article-modal');
+});
+$("#brownbags-modal-button").animatedModal({
+    modalTarget:'brownbags-modal',
+    animatedIn:'fadeInUp',
+    animatedOut:'fadeOutDown',
+    color:'#fff'
+});
+$("#symposium-modal-button").click(function() {
+    $("#symposium-modal").removeClass('article-modal');
+});
+$("#symposium-modal-button").animatedModal({
+    modalTarget:'symposium-modal',
+    animatedIn:'fadeInUp',
+    animatedOut:'fadeOutDown',
+    color:'#fff'
 });

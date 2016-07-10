@@ -83,3 +83,24 @@
 .margin-b-15 {
     margin-bottom: 15px;
 }
+.remove-center {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fa-custom-lg {
+    font-size: 3em;
+    cursor: pointer;
+    transition: 100ms;
+}
+.fa-custom-lg:hover {
+    color: #418fab;
+    transform: rotate(90deg);
+    transition: 100ms;
+}
+.modal-row {
+    margin: 0 15px;
+}
+.center-me {
+    text-align: center;
+}
