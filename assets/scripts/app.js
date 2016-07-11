@@ -412,3 +412,16 @@ $("#symposium-modal-button").animatedModal({
     animatedOut:'fadeOutDown',
     color:'#fff'
 });
+// Lazy loading
+$(document).ready(function() {
+    $("img.lazy").unveil(200, function() {
+        $(this).load(function() {
+            this.style.opacity = 1;
+        }); 
+    });
+    $("img.lazy-no-transition").unveil(1000, function() {
+        $(this).load(function() {
+            this.style.opacity = 1;
+        }); 
+    });
+});
