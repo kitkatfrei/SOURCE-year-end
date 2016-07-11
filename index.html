@@ -772,46 +772,49 @@
         </div>
         <!-- End Clients v1 -->
         <!-- MODALS -->
-        <div id="my-first-year-modal" class="article-modal my-year-with-source-modal">
-            <div class="col-sm-12 remove-center">
-                <span id="btn-close-modal" class="close-my-first-year-modal"> 
-                    <i class="fa fa-times-circle fa-custom-lg"></i>
-                </span>
+        <div id="all-modals">
+            <div id="my-first-year-modal" class="section-modal article-modal my-year-with-source-modal">
+                <div class="col-sm-12 remove-center">
+                    <span id="btn-close-modal" class="close-my-first-year-modal"> 
+                        <i class="fa fa-times-circle fa-custom-lg"></i>
+                    </span>
+                </div>
+                <div class="modal-row extra-letter-margin">
+                    {% include my-year-with-source-modal.html %}
+                </div>
             </div>
-            <div class="modal-row extra-letter-margin">
-                {% include my-year-with-source-modal.html %}
+            <div id="client-spotlight-modal" class="section-modal article-modal client-spotlight-modal">
+                <div class="col-sm-12 remove-center">
+                    <span id="btn-close-modal" class="close-client-spotlight-modal"> 
+                        <i class="fa fa-times-circle fa-custom-lg"></i>
+                    </span>
+                </div>
+                <div class="modal-row extra-letter-margin">
+                    {% include client-spotlight-modal.html %}
+                </div>
+            </div>
+            <div id="brownbags-modal" class="section-modal article-modal brownbags-modal">
+                <div class="col-sm-12 remove-center">
+                    <span id="btn-close-modal" class="close-brownbags-modal"> 
+                        <i class="fa fa-times-circle fa-custom-lg"></i>
+                    </span>
+                </div>
+                <div class="modal-row extra-letter-margin">
+                    {% include brownbags-modal.html %}
+                </div>
+            </div>
+            <div id="symposium-modal" class="section-modal article-modal symposium-modal">
+                <div class="col-sm-12 remove-center">
+                    <span id="btn-close-modal" class="close-symposium-modal"> 
+                        <i class="fa fa-times-circle fa-custom-lg"></i>
+                    </span>
+                </div>
+                <div class="modal-row extra-letter-margin">
+                    {% include symposium-modal.html %}
+                </div>
             </div>
         </div>
-        <div id="client-spotlight-modal" class="article-modal client-spotlight-modal">
-            <div class="col-sm-12 remove-center">
-                <span id="btn-close-modal" class="close-client-spotlight-modal"> 
-                    <i class="fa fa-times-circle fa-custom-lg"></i>
-                </span>
-            </div>
-            <div class="modal-row extra-letter-margin">
-                {% include client-spotlight-modal.html %}
-            </div>
-        </div>
-        <div id="brownbags-modal" class="article-modal brownbags-modal">
-            <div class="col-sm-12 remove-center">
-                <span id="btn-close-modal" class="close-brownbags-modal"> 
-                    <i class="fa fa-times-circle fa-custom-lg"></i>
-                </span>
-            </div>
-            <div class="modal-row extra-letter-margin">
-                {% include brownbags-modal.html %}
-            </div>
-        </div>
-        <div id="symposium-modal" class="article-modal symposium-modal">
-            <div class="col-sm-12 remove-center">
-                <span id="btn-close-modal" class="close-symposium-modal"> 
-                    <i class="fa fa-times-circle fa-custom-lg"></i>
-                </span>
-            </div>
-            <div class="modal-row extra-letter-margin">
-                {% include symposium-modal.html %}
-            </div>
-        </div>
+        <!-- END MODALS -->
         <!-- CONTACT -->
         <section id="contact">
             <!-- Footer v7 -->
