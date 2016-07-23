@@ -17750,7 +17750,6 @@ fieldset[disabled] .btn-ig-bg {
 
 .tab-v3 .tab-pane {
   text-align: left;
-  border: 1px solid #ebeef6;
 }
 
 .tab-v3 .tab-pane .tab-pane-content {
@@ -23417,7 +23416,7 @@ fieldset[disabled] .btn-ig-bg {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/SOURCE/mock-empire.jpg) no-repeat;
+  background: url(../img/SOURCE/team-banner-web.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -23429,7 +23428,7 @@ fieldset[disabled] .btn-ig-bg {
 		bottom: 0;
 		left: 0;
 		background-image: linear-gradient(to bottom,#4e8fa9,#fff);
-		opacity: .6; 
+		opacity: .3; 
   }
 
 .promo-block-v3 .promo-block-v3-title {
@@ -27688,7 +27687,7 @@ fieldset[disabled] .btn-ig-bg {
 .footer-v7 {
   position: relative;
   z-index: 1;
-  background: url(../../assets/img/SOURCE/source_above.jpg) no-repeat;
+  background: url(../../assets/img/SOURCE/la-skyline-footer.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -31424,7 +31423,7 @@ fieldset[disabled] .btn-ig-bg {
 
 .header-section-scroll .navbar-logo .navbar-logo-wrap {
   display: inline-block;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header-section-scroll .navbar-logo .navbar-logo-wrap:focus, .header-section-scroll .navbar-logo .navbar-logo-wrap:hover {
@@ -31433,7 +31432,7 @@ fieldset[disabled] .btn-ig-bg {
 
 .header-section-scroll .navbar-logo .navbar-logo-img {
   display: inline-block;
-  width: 180px;
+  width: 100px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
@@ -31471,7 +31470,7 @@ fieldset[disabled] .btn-ig-bg {
   color: #34343c;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px;
+  padding: 9px;
 }
 
 .header-section-scroll .header-section-scroll-menu .nav-item-child:hover {

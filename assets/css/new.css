@@ -162,3 +162,12 @@ div.center-me p {
 #all-modals {
     overflow: hidden;
 }
+.tab-content>div.show-pane {
+    display: block;
+}
+.tab-pane-left {
+    border-right: 2px solid #418fab;
+}
+.tab-content div.row {
+    margin-bottom: 20px;
+}
