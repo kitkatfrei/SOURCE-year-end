@@ -181,3 +181,6 @@ div.signature h3 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.client-item-padding {
+    padding: 5px 5px;
+}
