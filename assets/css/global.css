@@ -136,7 +136,7 @@ body {
 
 p {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Roboto, sans-serif;
   color: #606060;
   line-height: 1.4;
@@ -15043,7 +15043,6 @@ fieldset[disabled] .btn-ig-bg {
 }
 
 .heading-v1 .heading-v1-subtitle {
-  max-width: 350px;
   font-size: 16px;
   font-style: italic;
   font-family: Droid Serif, serif;

@@ -171,3 +171,13 @@ div.center-me p {
 .tab-content div.row {
     margin-bottom: 20px;
 }
+div.extra-letter-margin div div {
+    text-align: center;
+}
+div.signature h3 {
+    font-size: 22px;
+}
+.senior-row-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
