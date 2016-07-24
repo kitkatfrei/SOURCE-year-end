@@ -414,7 +414,7 @@ $("#symposium-modal-button").animatedModal({
 });
 // Lazy loading
 $(document).ready(function() {
-    $("img.lazy").unveil(200, function() {
+    $("img.lazy").unveil(1000, function() {
         $(this).load(function() {
             this.style.opacity = 1;
         }); 

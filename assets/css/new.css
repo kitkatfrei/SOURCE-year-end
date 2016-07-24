@@ -106,7 +106,7 @@
 }
 img.lazy {
     opacity: 0;
-    transition: opacity 1.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 img.lazy-no-transition {
     opacity: 0;
