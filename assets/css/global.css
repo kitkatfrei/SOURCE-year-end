@@ -135,7 +135,7 @@ body {
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   font-family: Roboto, sans-serif;
   color: #606060;
@@ -20368,10 +20368,7 @@ fieldset[disabled] .btn-ig-bg {
 }
 
 .clients-v1 .clients-v1-item:hover .clients-v1-img-default {
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  border-radius: 100px;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
