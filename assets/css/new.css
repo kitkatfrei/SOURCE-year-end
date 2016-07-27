@@ -236,3 +236,12 @@ div.signature h3 {
     font-size: 13px;
     font-weight: 500;
 }
+.article-logo {
+    width: 60px;
+}
+.counters-overflow  {
+    overflow:hidden;
+}
+.separation {
+    margin-bottom: 75px;
+}
