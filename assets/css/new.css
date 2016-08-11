@@ -245,3 +245,10 @@ div.signature h3 {
 .separation {
     margin-bottom: 75px;
 }
+.modal-img-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.modal-img-container img {
+    max-width: 75%;
+}

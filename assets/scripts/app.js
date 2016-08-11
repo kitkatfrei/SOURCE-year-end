@@ -425,3 +425,12 @@ $(document).ready(function() {
         }); 
     });
 });
+
+//social-sharing
+$("#share-client-spotlight").jsSocials({
+    url: "http://sourceconsulting.xyz/client-spotlight",
+    text: "SOURCE Client Spotlight - CTEC",
+    showLabel: false,
+    showCount: false,
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+});

@@ -14,31 +14,8 @@
 <!-- Mobile Metas -->
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- GLOBAL MANDATORY STYLES -->
-<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500,300,300italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/et-line/et-line.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/themify/themify.css" rel="stylesheet" type="text/css"/>
-<!-- END GLOBAL MANDATORY STYLES -->
+{% include header-css.html %}
 
-<!-- BEGIN THEME PLUGINS STYLE -->
-<link href="assets/plugins/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="assets/css/iconate.css">
-<link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/dzsparallaxer/dzsparallaxer.css" rel="stylesheet" type="text/css"/>
-<link href="assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
-<!-- END THEME PLUGINS STYLE -->
-
-<!-- THEME STYLES -->
-<link href="assets/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/new.css" rel="stylesheet" type="text/css"/>
-<!-- END THEME STYLES -->
-
-<!-- THEME -->
-<link href="assets/css/theme/base.css" rel="stylesheet" type="text/css" id="style-color"/>
 <!-- END THEME -->
 
 <!-- BEGIN JQUERY -->
@@ -85,7 +62,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <nav class="collapse navbar-collapse nav-collapse">
-                    <ul class="header-section-scroll-menu margin-b-40">
+                    <ul class="header-section-scroll-menu margin-b-30">
                         <li class="nav-item active"><a class="nav-item-child" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#letter-from-the-managers">Letter From The Managers</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#my-year-with-source">Developing our Students</a></li>
@@ -574,7 +551,7 @@
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeInLeft" data-wow-duration=".2" data-wow-delay=".2s">
                                         <div class="team-v2-img-gradient">
-                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/brownbags/nbb-cover.png" alt="">
+                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/brownbags/brownbags-cover2.jpg" alt="">
                                         </div>
                                         <div class="team-v2-content">
                                             <div class="team-v2-center-align">
@@ -628,7 +605,7 @@
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeInLeft" data-wow-duration=".2" data-wow-delay=".2s">
                                         <div class="team-v2-img-gradient">
-                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/symposium/symposium-cover.png" alt="">
+                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/symposium/symposium-cover.jpg" alt="">
                                         </div>
                                         <div class="team-v2-content">
                                             <div class="team-v2-center-align">
@@ -684,7 +661,7 @@
                                                 <span class="team-v2-member-position">{{ senior.job }} - {{ senior.job-title }}</span>
                                             </div>
                                         </div>
-                                        <a class="team-v2-link" href=""></a>
+                                        <a class="team-v2-link" href="{{ senior.linkedin }}" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
