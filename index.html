@@ -21,6 +21,8 @@
 <!-- BEGIN JQUERY -->
 <script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
 <!-- END JQUERY -->
+<!-- QUOTES -->
+<!-- END QUOTES    -->
 
 <!-- FAVICON -->
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
@@ -32,8 +34,12 @@
 <div id="loader-wrapper">
     <div id="loader">
         <img src="/assets/img/source-preloader.png">
-        <h2>SOURCE’s secret lies in its ability to bridge; SOURCE connects nonprofits to one another and to students and students to their community and each other to create an important network for social change in Claremont and beyond.</h2>
-        <h2>- Sara Linssen, SOURCE Manager</h2>
+        {% assign rand = 'now' | date:"%s" | modulo: 3 | downcase %}
+        {% for quote in site.data.quotes %}
+            {% if quote.number == rand %}
+                <h2 id="quote-load">{{ quote.quote }}</h2>
+            {% endif %}
+        {% endfor %}
         <img class="loading-icon" src="/assets/img/loading-ring.gif">
     </div>
 </div>
