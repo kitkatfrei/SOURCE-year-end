@@ -425,13 +425,13 @@ $(document).ready(function() {
         }); 
     });
 });
-
-// preloading
-$(window).load(function() {
-    // Animate loader off screen
-    $("#loader-wrapper").fadeOut("slow");;
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 5000);
+ 
 });
-
 // social-sharing
 $("#share-client-spotlight").jsSocials({
     url: "http://sourceconsulting.xyz/client-spotlight",
