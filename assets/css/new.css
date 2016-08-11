@@ -241,7 +241,7 @@ div.signature h3 {
 #loader h2 {
     color: #fff;
     font-size: 25px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', Georgia, serif;
     font-weight: 500;
 }
 #loader img {
