@@ -38,9 +38,9 @@
         {% for quote in site.data.quotes %}
             {% if quote.number == rand %}
                 <h2 id="quote-load">{{ quote.quote }}</h2>
-            {% endif %}
-            {% if quote.author != blank %}
-                <h2>{{ quote.author }}</h2>
+                {% if quote.author != blank %}
+                    <h2>{{ quote.author }}</h2>
+                {% endif %}
             {% endif %}
         {% endfor %}
         <img class="loading-icon" src="/assets/img/loading-ring.gif">
