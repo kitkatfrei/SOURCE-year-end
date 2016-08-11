@@ -426,11 +426,30 @@ $(document).ready(function() {
     });
 });
 
-//social-sharing
+// preloading
+$(window).load(function() {
+    // Animate loader off screen
+    $("#loader-wrapper").fadeOut("slow");;
+});
+
+// social-sharing
 $("#share-client-spotlight").jsSocials({
     url: "http://sourceconsulting.xyz/client-spotlight",
     text: "SOURCE Client Spotlight - CTEC",
-    showLabel: false,
-    showCount: false,
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+});
+$("#share-symposium").jsSocials({
+    url: "http://sourceconsulting.xyz/symposium",
+    text: "SOURCE Client Spotlight - CTEC",
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+});
+$("#share-brownbags").jsSocials({
+    url: "http://sourceconsulting.xyz/brownbags",
+    text: "SOURCE Client Spotlight - CTEC",
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+});
+$("#share-developing-students").jsSocials({
+    url: "http://sourceconsulting.xyz/developing-our-students",
+    text: "SOURCE Client Spotlight - CTEC",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
 });
