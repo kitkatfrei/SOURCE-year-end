@@ -361,19 +361,15 @@ $( "#client-more" ).click(function() {
 //Reading Time
 $('div.my-year-with-source-modal').readingTime({
     readingTimeTarget: $('#my-year-modal').find('.eta'),
-    wordCountTarget: $('#my-year-modal').find('.word-count'),
 });
 $('div.client-spotlight-modal').readingTime({
     readingTimeTarget: $('#client-spotlight-modal-time').find('.eta'),
-    wordCountTarget: $('#client-spotlight-modal-time').find('.word-count'),
 });
 $('div.brownbags-modal').readingTime({
     readingTimeTarget: $('#brownbags-modal-time').find('.eta'),
-    wordCountTarget: $('#brownbags-modal-time').find('.word-count'),
 });
 $('div.symposium-modal').readingTime({
     readingTimeTarget: $('#symposium-modal-time').find('.eta'),
-    wordCountTarget: $('#symposium-modal-time').find('.word-count'),
 });
 
 $("#my-first-button").click(function() {
