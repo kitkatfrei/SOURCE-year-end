@@ -251,11 +251,16 @@ div.signature h3 {
 }
 @media (max-width: 1199px) {
     #loader {
-        left: 30%;
+        left: 35%;
         width: 500px;
     }
     #loader h2 {
         font-size: 18px;
+    }
+}
+@media (max-width: 1000px) {
+    #loader {
+        left: 35%;
     }
 }
 @media (max-width: 800px) {
