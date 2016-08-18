@@ -318,3 +318,36 @@ div.signature h3 {
 .modal {
     top: 25%;
 }
+/* Buttons */
+.btn-black-border {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.4;
+    text-align: center;
+    background: #418fab;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #418fab;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.btn-black-border:hover {
+    background: #fff;
+    border-color: #418fab;
+    color: #418fab;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}

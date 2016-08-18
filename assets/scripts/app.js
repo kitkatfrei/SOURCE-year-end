@@ -467,3 +467,30 @@ $("#share-developing-students").jsSocials({
     text: "SOURCE Client Spotlight - CTEC",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
 });
+// fundraising doughnut
+var labels = [];
+var financials = [];
+{% assign count = 0 %}
+{% for fund in site.data.financials %}
+    labels[{{ count }}] = "{{ fund.label }}";
+    financials[{{ count }}] = "{{ fund.data }}";
+    {% assign count = count | plus:1 %}
+{% endfor %}
+var data = {
+    labels: labels,
+    datasets:[
+        {
+            data: financials,
+            backgroundColor: [
+                "#F7464A",
+                "#46BFBD",
+                "#FDB45C"
+            ],
+        }]
+};
+var ctx = document.getElementById('financials').getContext('2d');
+var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data
+});
+ 
