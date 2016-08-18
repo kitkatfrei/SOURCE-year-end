@@ -315,3 +315,6 @@ div.signature h3 {
 .back-to-home-button a {
     font-weight: 500;
 }
+.modal {
+    top: 25%;
+}
