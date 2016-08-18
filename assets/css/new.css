@@ -307,3 +307,11 @@ div.signature h3 {
     -webkit-transition: all 0.3s 1s ease-out;  
             transition: all 0.3s 1s ease-out;
 }
+/* Help Point users to click on mission */
+.process-v2 {
+    cursor: pointer;
+}
+/* Post Pages */
+.back-to-home-button a {
+    font-weight: 500;
+}

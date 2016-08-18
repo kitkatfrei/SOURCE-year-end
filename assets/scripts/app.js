@@ -1,5 +1,23 @@
 ---
 ---
+// Quote Randomization
+var quotes = [];
+var authors = [];
+{% assign i = 0 %}
+{% for quote in site.data.quotes %}
+quotes[{{ i }}] = {{ quote.quote }};
+    {% if quote.author != blank %}
+        authors[{{ i }}] = "{{ quote.author }}";
+    {% else %}
+        authors[{{ i }}] = "";
+    {% endif %}
+{% assign i = i | plus: 1 %}
+{% endfor %}
+var totalQ = {{ i }};
+var randomQ = Math.floor(Math.random() * totalQ);
+var loadQuote = $('<h2 id="quote-load">"' + quotes[randomQ] + '"</h2><h2>' + authors[randomQ] + '</h2><img class="loading-icon" src="/assets/img/loading-ring.gif">').hide().fadeIn(1500);
+$('#quote').append(loadQuote);
+
 // Core Javascript Initialization
 var App = function() {
     'use strict';

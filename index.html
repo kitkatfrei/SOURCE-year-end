@@ -34,16 +34,7 @@
 <div id="loader-wrapper">
     <div id="loader">
         <img src="/assets/img/source-preloader.png">
-        {% assign rand = 'now' | date:"%s" | modulo: 3 | downcase %}
-        {% for quote in site.data.quotes %}
-            {% if quote.number == rand %}
-                <h2 id="quote-load">{{ quote.quote }}</h2>
-                {% if quote.author != blank %}
-                    <h2>{{ quote.author }}</h2>
-                {% endif %}
-            {% endif %}
-        {% endfor %}
-        <img class="loading-icon" src="/assets/img/loading-ring.gif">
+            <div id="quote"></div>
     </div>
 </div>
 <!-- WRAPPER -->
@@ -132,7 +123,7 @@
                     <div class="col-md-12 sm-margin-b-50">
                         <div class="col-sm-6">
                             <h3>Fostering Collaboration</h3>
-                            <p>This year we focused heavily on the need for collaboration among nonprofits identified in the Spring of 2015 during the SOURCE Summit. Our local community’s desire for greater collaboration was addressed through our continuation and improvement of <strong>Nonprofit Brown Bags</strong>. In addition to preserving a common space for nonprofit staff and community leaders to connect and share ideas, we introduced an educational component to our Brown Bags called the <strong>SOURCE Speaker Series</strong>. The Speaker Series invited a diverse range of outside experts to speak at each luncheon on a number of topics essential to running a successful nonprofit. We found that the speakers encouraged more robust discussions and greater collaborative efforts. Our most notable Brown Bag of the year saw an attendance of <strong>over 40 community members</strong>, who sat with representatives from the Ralph M. Parsons, Weingart, and Rose Hills Foundation and engaged in tailored discussions about how to more effectively write grants.</p>
+                            <p>This year we focused heavily on the need for collaboration among nonprofits identified in the Spring of 2015 during the SOURCE Summit. Our local community’s desire for greater collaboration was addressed through our continuation and improvement of <strong>Nonprofit Brown Bags</strong>. In addition to preserving a common space for nonprofit staff and community leaders to connect and share ideas, we introduced an educational component to our Brown Bags called the <strong>SOURCE Speaker Series</strong>. The Speaker Series invited a diverse range of outside experts to speak at each luncheon on a number of topics essential to running a successful nonprofit. We found that the speakers encouraged more robust discussions and greater collaborative efforts. Our most notable Brown Bag of the year saw an attendance of <strong>over 40 community members</strong>, who sat with representatives from the Ralph M. Parsons, Weingart, and Rose Hills Foundation and engaged in tailored discussions about how to write grants more effectively.</p>
                             <h3>Leveraging Mentorship</h3>
                             <p>This year also saw a renewed effort to <strong>expand our network of mentors and supporters</strong>, particularly through our <strong>Mentorship Program</strong>. Our programming has brought speakers ranging from CMC alum Paul Schulz, Vice President Development and Donor Relations at California Community Foundation and former CEO of Red Cross, to Sarah Twombly from Blue State Digital. All of our speakers provided beneficial insights on how our consultants could create more productive and collaborative partnerships with our clients.</p>
                         </div>
@@ -200,21 +191,21 @@
                 <div class="clearfix">
                     <div class="row no-space-row">
                         <div class="col-sm-4 sm-margin-b-30">
-                            <div class="process-v2">
+                            <div class="process-v2" data-toggle="modal" data-target="#prioritize-the-impact">
                                 <span class="process-v2-element radius-circle"><i class="fa fa-bar-chart"></i></span>
-                                <h3 class="process-v2-title">1. Prioritize the Impact</h3>
+                                <a><h3 class="process-v2-title">Prioritize the Impact</h3></a>
                             </div>
                         </div>
                         <div class="col-sm-4 sm-margin-b-30">
-                            <div class="process-v2">
+                            <div class="process-v2" data-toggle="modal" data-target="#lead-with-integrity">
                                 <span class="process-v2-element radius-circle"><i class="fa fa-gavel"></i></span>
-                                <h3 class="process-v2-title">2. Lead with Integrity</h3>
+                                <h3 class="process-v2-title">Lead with Integrity</h3>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="process-v2">
+                            <div class="process-v2" data-toggle="modal" data-target="#collaborate-and-engage">
                                 <span class="process-v2-element radius-circle"><i class="fa fa-globe"></i></span>
-                                <h3 class="process-v2-title">3. Collaborate and Engage</h3>
+                                <h3 class="process-v2-title">Collaborate and Engage</h3>
                             </div>
                         </div>
                     </div>
@@ -222,19 +213,38 @@
                 </div>
                 <div class="row process-4-5 no-space-row">
                     <div class="col-sm-6 sm-margin-b-30">
-                        <div class="process-v2">
+                        <div class="process-v2" data-toggle="modal" data-target="#innovate-to-improve">
                             <span class="process-v2-element radius-circle"><i class="fa fa-lightbulb-o"></i></span>
-                            <h3 class="process-v2-title">4. Innovate to Improve</h3>
+                            <h3 class="process-v2-title">Innovate to Improve</h3>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="process-v2">
+                        <div class="process-v2" data-toggle="modal" data-target="#own-the-outcome">
                             <span class="process-v2-element radius-circle"><i class="fa fa-thumbs-up"></i></span>
-                            <h3 class="process-v2-title">5. Own the Outcome</h3>
+                            <h3 class="process-v2-title">Own the Outcome</h3>
                         </div>
                     </div>
                 </div>
             </div>
+            {% for mission in site.data.mission %}
+            {% assign mission_id = mission.title | downcase | replace:' ','-' %}
+            <div class="modal fade" id="{{ mission_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+                <div class="modal-dialog" role="d`ocument">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">{{ mission.title }} <i class="fa {{ mission.icon }}"></i></h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>{{ mission.statement }}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-base-brd btn-base-xs" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </section>
         <!-- Our Mission -->
         <!--  MY YEAR -->
