@@ -68,6 +68,7 @@
                         <li class="nav-item"><a class="nav-item-child" href="#client-spotlight">Client Spotlight: CTEC</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#nonprofit-brownbags">Expanding Nonprofit Brown Bags</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#symposium">Hosting our First SOURCE Symposium</a></li>
+                        <li class="nav-item"><a class="nav-item-child" href="#fundraising">Financial Highlights</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#source-seniors">Where Do Our Seniors Go?</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="https://online.cmc.edu/giving/donate-online">Donate to SOURCE!</a></li>
                     </ul>
@@ -700,31 +701,48 @@
         </section>
         <!-- END CLIENT SPOTLIGHT -->
         <!-- TEAM -->
-        <section id="fundraising" class="bg-color-sky-light">
-            <div class="content-md container-sm">
-                <!-- Heading v1 -->
-                <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">Financial Highlights</h2>
-                    <p class="heading-v1-text">What our donors invest in</p>
-                </div>
-                <!-- End Heading v1 -->
-
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <!-- Heading v1 -->
-                        <div class="heading-v1 margin-b-15">
-                            <h2 class="heading-v1-title">SOURCE Financial Highlights</h2>
+        <!-- FINANCIALS -->
+        <section id="fundraising" class="bg-color-sky-light padding-b-50">
+            <div class="banner-img-v3 bg-position-fixed margin-b-30">
+                <div class="content-sm container">
+                    <div class="heading-v1 text-center financials-headings margin-b-30">
+                        <h2 class="heading-v1-title">Financial Highlights</h2>
+                        <p class="heading-v1-text">What our donors invest in</p>
+                    </div>
+                    <div class="row">
+                        {% for fund in site.data.financials %}
+                        <div class="col-sm-3 col-xs-6 xs-full-width sm-margin-b-50">
+                            <!-- Counters v4 -->
+                            <div class="counters-v4">
+                                <i class="counters-v4-icon margin-b-20 fa {{ fund.icon }}"></i>
+                                <figure class="counter counters-v4-number"><span>$</span><span id="{{ fund.label }}">{{ fund.data }}</span></figure>
+                                <h4 class="counters-v4-title">{{ fund.label }}</h4>
+                            </div>
+                            <!-- End Counters v4 -->
                         </div>
+                        {% endfor %}
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
                         <!-- End Heading v1 -->
-                        <canvas id="financials" width="400" height="400"></canvas>
-                        <p>This year, SOURCE hosted its first ever year-end Symposium to showcase and celebrate SOURCE's impact in the community. The SOURCE Symposium took place the morning of April 29th on Claremont McKenna’s campus, and featured presentations from our seven SOURCE teams on the projects they worked on and the impact generated for our nonprofit community.</p>
-                        <a id="symposium-modal-button" href="#symposium-modal"><button type="button" class="btn-read-more btn-black-border btn-base-sm">Read More</button></a>
-                        
+                            <div class="col-sm-5 col-sm-push-7 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                                <div class="doughnut-chart">
+                                    <canvas id="financials" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 col-sm-pull-5 col-xs-12">
+                                {% for fund in site.data.financials %}
+                                <h2 class="financial-h2" style="color:{{ fund.color }}">{{ fund.label }} - {{ fund.money }}</h2>
+                                <p>{{ fund.content }}</p>
+                                {% endfor %}
+                            </div>
                     </div>
                 </div>
-                <!--// end row -->
-            </div>
         </section>
+        <!-- END FINANCIALS -->
         <section id="source-seniors" class="separation">
             <div class="content-md container-sm">
                 <!-- Heading v1 -->

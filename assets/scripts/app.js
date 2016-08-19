@@ -443,37 +443,66 @@ $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 6000);
+    }, 1);
  
 });
 // social-sharing
 $("#share-client-spotlight").jsSocials({
     url: "http://sourceconsulting.xyz/client-spotlight",
     text: "SOURCE Client Spotlight - CTEC",
-    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
+    showCount: false
+    
 });
 $("#share-symposium").jsSocials({
     url: "http://sourceconsulting.xyz/symposium",
-    text: "SOURCE Client Spotlight - CTEC",
-    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+    text: "SOURCE Symposium 2016",
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
+    showCount: false
 });
 $("#share-brownbags").jsSocials({
     url: "http://sourceconsulting.xyz/brownbags",
-    text: "SOURCE Client Spotlight - CTEC",
-    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+    text: "SOURCE Nonprofit Brownbags",
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
+    showCount: false
 });
 $("#share-developing-students").jsSocials({
     url: "http://sourceconsulting.xyz/developing-our-students",
-    text: "SOURCE Client Spotlight - CTEC",
-    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+    text: "SOURCE Developing Our Students",
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
+    showCount: false
 });
-// fundraising doughnut
+// Process animation
+var countOptions = {
+useEasing : true, 
+useGrouping : true, 
+separator : ',', 
+decimal : '.', 
+prefix : '', 
+suffix : '' 
+};
+// financials doughnut
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+}
 var labels = [];
 var financials = [];
+var bgColor = [];
+var bgHover = [];
+var counters = [];
 {% assign count = 0 %}
 {% for fund in site.data.financials %}
     labels[{{ count }}] = "{{ fund.label }}";
-    financials[{{ count }}] = "{{ fund.data }}";
+    financials[{{ count }}] = {{ fund.data }};
+    bgColor[{{ count }}] = "{{ fund.color }}";
+    bgHover[{{ count }}] = "{{ fund.hover }}";
+    counters[{{ count }}] = new CountUp("{{ fund.label }}", 0, {{ fund.data }}, 0, 2, countOptions);
     {% assign count = count | plus:1 %}
 {% endfor %}
 var data = {
@@ -481,16 +510,52 @@ var data = {
     datasets:[
         {
             data: financials,
-            backgroundColor: [
-                "#F7464A",
-                "#46BFBD",
-                "#FDB45C"
-            ],
+            backgroundColor: bgColor,
+            hoverBackgroundColor: bgHover,
         }]
 };
-var ctx = document.getElementById('financials').getContext('2d');
-var myDoughnutChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: data
+function makeFinChart() {
+    var ctx = document.getElementById('financials').getContext('2d');
+    var myDoughnutChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: {
+            tooltipFontSize: 20,
+            tooltips: 
+            {
+              callbacks: {
+                  label: function(tooltipItem, data, totalD) {
+                      var label = data.labels[tooltipItem.index];
+                      var value = data.datasets[0].data[tooltipItem.index];
+                      var totalD = 0;
+                      $.each(financials,function() {
+                          totalD += this;
+                      });
+                      var percentage = Math.round(value / totalD * 100);
+                      return label + ' - ' + percentage + '%';
+                  }
+              }
+          },
+        }
+    });
+}
+var inView = false;
+var inViewC = false;
+$(window).scroll(function () {
+    if (isScrolledIntoView('#financials')) {
+        if (inView) {
+            return;
+        }
+        inView = true;
+        makeFinChart();
+    }
+    if (isScrolledIntoView('#fundraising')) {
+        if(inViewC) {
+            return;
+        }
+        inViewC = true;
+        for (i=0; i< counters.length; i++) {
+            counters[i].start();
+        }
+    }
 });
- 

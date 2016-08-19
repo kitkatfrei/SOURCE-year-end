@@ -351,3 +351,17 @@ div.signature h3 {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
+.doughnut-chart {
+    margin-bottom: 25px;
+}
+.financials-headings h2, .financials-headings p {
+    color: #fff;
+}
+.financial-h2 {
+    color: #2e9df7;
+    border-color: #2e9df7;
+    border-bottom: 3px solid;
+}
+.padding-b-50 {
+    padding-bottom: 50px;
+}

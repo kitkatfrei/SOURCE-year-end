@@ -22539,9 +22539,9 @@ fieldset[disabled] .btn-ig-bg {
 .banner-img-v3 {
   position: relative;
   z-index: 1;
-  background: url(../../assets/img/1920x1080/04.jpg) no-repeat;
+  background: url(/assets/img/SOURCE/counters.jpg) no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 0% 0%;
 }
 
 .banner-img-v3:before {
@@ -31465,7 +31465,7 @@ fieldset[disabled] .btn-ig-bg {
   color: #34343c;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 9px;
+  padding: 7px;
 }
 
 .header-section-scroll .header-section-scroll-menu .nav-item-child:hover {
