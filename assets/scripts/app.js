@@ -498,7 +498,7 @@ var bgHover = [];
 var counters = [];
 {% assign count = 0 %}
 {% for fund in site.data.financials %}
-    labels[{{ count }}] = "{{ fund.label }}";
+    labels[{{ count }}] = "{{ fund.label }} ";
     financials[{{ count }}] = {{ fund.data }};
     bgColor[{{ count }}] = "{{ fund.color }}";
     bgHover[{{ count }}] = "{{ fund.hover }}";

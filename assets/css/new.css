@@ -365,3 +365,12 @@ div.signature h3 {
 .padding-b-50 {
     padding-bottom: 50px;
 }
+.donate-button {
+    margin-left: 25px;
+}
+.donors {
+    margin-top: 40px;
+}
+.donors h2 {
+    border-bottom: 3px solid;
+}
