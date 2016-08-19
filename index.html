@@ -59,9 +59,9 @@
                 <!-- End Logo -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <nav class="collapse navbar-collapse nav-collapse">
+                <nav id="menu-nav" class="collapse navbar-collapse nav-collapse">
                     <ul class="header-section-scroll-menu margin-b-30">
-                        <li class="nav-item active"><a class="nav-item-child" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-item-child" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#letter-from-the-managers">Letter From The Managers</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#my-year-with-source">Developing our Students</a></li>
                         <li class="nav-item"><a class="nav-item-child" href="#client-impact-summary">Overview of 2015-2016 Nonprofit Impact</a></li>
@@ -177,77 +177,77 @@
                 <!--// end row -->
                 <!--// end row -->
             </div>
+            <!-- Our Mission -->
+            <div class="bg-color-sky-light">
+                <div class="content-md container">
+                    <!-- Heading v1 -->
+                    <div class="heading-v1 text-center margin-b-80">
+                        <h2 class="heading-v1-title">Our Mission</h2>
+                        <p class="heading-v1-text">The mission of SOURCE is to help local nonprofits build capacity <br>and increase efficiency by providing professional consulting services <br>at zero cost to the organizations, while simultaneously <br>enhancing student development.</p>
+                    </div>
+                    <!-- End Heading v1 -->
+
+                    <div class="clearfix">
+                        <div class="row no-space-row">
+                            <div class="col-sm-4 sm-margin-b-30">
+                                <div class="process-v2" data-toggle="modal" data-target="#prioritize-the-impact">
+                                    <span class="process-v2-element radius-circle"><i class="fa fa-bar-chart"></i></span>
+                                    <a><h3 class="process-v2-title">Prioritize the Impact</h3></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 sm-margin-b-30">
+                                <div class="process-v2" data-toggle="modal" data-target="#lead-with-integrity">
+                                    <span class="process-v2-element radius-circle"><i class="fa fa-gavel"></i></span>
+                                    <a><h3 class="process-v2-title">Lead with Integrity</h3></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="process-v2" data-toggle="modal" data-target="#collaborate-and-engage">
+                                    <span class="process-v2-element radius-circle"><i class="fa fa-globe"></i></span>
+                                    <a><h3 class="process-v2-title">Collaborate and Engage</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// end row -->
+                    </div>
+                    <div class="row process-4-5 no-space-row">
+                        <div class="col-sm-6 sm-margin-b-30">
+                            <div class="process-v2" data-toggle="modal" data-target="#innovate-to-improve">
+                                <span class="process-v2-element radius-circle"><i class="fa fa-lightbulb-o"></i></span>
+                                <a><h3 class="process-v2-title">Innovate to Improve</h3></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="process-v2" data-toggle="modal" data-target="#own-the-outcome">
+                                <span class="process-v2-element radius-circle"><i class="fa fa-thumbs-up"></i></span>
+                                <a><h3 class="process-v2-title">Own the Outcome</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% for mission in site.data.mission %}
+                {% assign mission_id = mission.title | downcase | replace:' ','-' %}
+                <div class="modal fade" id="{{ mission_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+                    <div class="modal-dialog" role="d`ocument">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title">{{ mission.title }} <i class="fa {{ mission.icon }}"></i></h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>{{ mission.statement }}</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn-base-brd btn-base-xs" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        <!-- Our Mission -->
         </section>
         <!-- END ABOUT -->
-        <!-- Our Mission -->
-        <section class="bg-color-sky-light">
-            <div class="content-md container">
-                <!-- Heading v1 -->
-                <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">Our Mission</h2>
-                    <p class="heading-v1-text">The mission of SOURCE is to help local nonprofits build capacity <br>and increase efficiency by providing professional consulting services <br>at zero cost to the organizations, while simultaneously <br>enhancing student development.</p>
-                </div>
-                <!-- End Heading v1 -->
-
-                <div class="clearfix">
-                    <div class="row no-space-row">
-                        <div class="col-sm-4 sm-margin-b-30">
-                            <div class="process-v2" data-toggle="modal" data-target="#prioritize-the-impact">
-                                <span class="process-v2-element radius-circle"><i class="fa fa-bar-chart"></i></span>
-                                <a><h3 class="process-v2-title">Prioritize the Impact</h3></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-30">
-                            <div class="process-v2" data-toggle="modal" data-target="#lead-with-integrity">
-                                <span class="process-v2-element radius-circle"><i class="fa fa-gavel"></i></span>
-                                <a><h3 class="process-v2-title">Lead with Integrity</h3></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="process-v2" data-toggle="modal" data-target="#collaborate-and-engage">
-                                <span class="process-v2-element radius-circle"><i class="fa fa-globe"></i></span>
-                                <a><h3 class="process-v2-title">Collaborate and Engage</h3></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-                <div class="row process-4-5 no-space-row">
-                    <div class="col-sm-6 sm-margin-b-30">
-                        <div class="process-v2" data-toggle="modal" data-target="#innovate-to-improve">
-                            <span class="process-v2-element radius-circle"><i class="fa fa-lightbulb-o"></i></span>
-                            <a><h3 class="process-v2-title">Innovate to Improve</h3></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="process-v2" data-toggle="modal" data-target="#own-the-outcome">
-                            <span class="process-v2-element radius-circle"><i class="fa fa-thumbs-up"></i></span>
-                            <a><h3 class="process-v2-title">Own the Outcome</h3></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% for mission in site.data.mission %}
-            {% assign mission_id = mission.title | downcase | replace:' ','-' %}
-            <div class="modal fade" id="{{ mission_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
-                <div class="modal-dialog" role="d`ocument">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title">{{ mission.title }} <i class="fa {{ mission.icon }}"></i></h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>{{ mission.statement }}</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn-base-brd btn-base-xs" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </section>
-        <!-- Our Mission -->
         <!--  MY YEAR -->
         <section id="my-year-with-source" class="">
             <div class="content-md container-sm">
@@ -298,10 +298,8 @@
                 </div>
                 <!--// end row -->
             </div>
-        </section>
-        <!-- END MY YEAR -->
-        <!-- Counters v1 -->
-        <div class="counters-overflow counters-v1 counter-stats-padding">
+            <!-- Counters v1 -->
+            <div class="counters-overflow counters-v1 counter-stats-padding">
                 <div class="row">
                     <div class="col-sm-3 col-xs-6 xs-full-width counters-v1-border counters-v1-border-first">
                         <!-- Counters v1 -->
@@ -349,8 +347,10 @@
                     </div>
                 </div>
                 <!--// end row -->
-        </div>
-        <!-- End Counters v1 -->
+            </div>
+            <!-- End Counters v1 -->
+        </section>
+        <!-- END MY YEAR -->
         <!-- Tabs v3 -->
         <section id="client-impact-summary">
             <div class="bg-color-sky-light">
@@ -648,8 +648,8 @@
         </section>
         <!-- END CLIENT BROWNBAGS -->
         <!--  SYMPOSIUM -->
-        <section id="symposium" class="separation">
-            <div class="content-md container-sm">
+        <section id="symposium">
+            <div class="content-md container-sm separation">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
                     <h2 class="heading-v1-title">SOURCE Symposium 2016</h2>
@@ -700,7 +700,6 @@
             </div>
         </section>
         <!-- END CLIENT SPOTLIGHT -->
-        <!-- TEAM -->
         <!-- FINANCIALS -->
         <section id="fundraising" class="bg-color-sky-light padding-b-50">
             <div class="banner-img-v3 bg-position-fixed margin-b-30">
