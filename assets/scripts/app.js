@@ -564,7 +564,7 @@ $(document).ready(function () {
     $(document).on("scroll", onScroll);
     
     //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
+    $('a[href^="#"][data-scroll^="nav"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
         
@@ -587,7 +587,7 @@ $(document).ready(function () {
 
 function onScroll(event) {
     var scrollPos = $(document).scrollTop();
-    $('#menu-nav a').each(function () {
+    $('#menu-nav a[href^="#"][data-scroll^="nav"]').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
