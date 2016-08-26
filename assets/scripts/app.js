@@ -433,27 +433,28 @@ $(document).ready(function() {
  
 });
 // social-sharing
+var hostSite = "2015.sourcenonprofitconsulting.org";
 $("#share-client-spotlight").jsSocials({
-    url: "http://sourceconsulting.xyz/client-spotlight",
+    url: "http://" + hostSite + "/client-spotlight",
     text: "SOURCE Client Spotlight - CTEC",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
     
 });
 $("#share-symposium").jsSocials({
-    url: "http://sourceconsulting.xyz/symposium",
+    url: "http://" + hostSite + "/symposium",
     text: "SOURCE Symposium 2016",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });
 $("#share-brownbags").jsSocials({
-    url: "http://sourceconsulting.xyz/brownbags",
+    url: "http://" + hostSite + "/brownbags",
     text: "SOURCE Nonprofit Brownbags",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });
 $("#share-developing-students").jsSocials({
-    url: "http://sourceconsulting.xyz/developing-our-students",
+    url: "http://" + hostSite + "/developing-our-students",
     text: "SOURCE Developing Our Students",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
