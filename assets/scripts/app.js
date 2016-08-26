@@ -375,21 +375,6 @@ $( "#client-more" ).click(function() {
     $(" #client-more").slideUp();
     $( ".hidden-clients" ).fadeIn();
 });
-
-//Reading Time
-$('div.my-year-with-source-modal').readingTime({
-    readingTimeTarget: $('#my-year-modal').find('.eta'),
-});
-$('div.client-spotlight-modal').readingTime({
-    readingTimeTarget: $('#client-spotlight-modal-time').find('.eta'),
-});
-$('div.brownbags-modal').readingTime({
-    readingTimeTarget: $('#brownbags-modal-time').find('.eta'),
-});
-$('div.symposium-modal').readingTime({
-    readingTimeTarget: $('#symposium-modal-time').find('.eta'),
-});
-
 $("#my-first-button").click(function() {
     $("#my-first-year-modal").removeClass('article-modal');
 });
@@ -439,6 +424,7 @@ $(document).ready(function() {
         }); 
     });
 });
+// loading finished
 $(document).ready(function() {
  
     setTimeout(function(){
