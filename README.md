@@ -10,7 +10,7 @@ In order to use this repository, you should be able to use the following things:
 * liquid
 
 ## Installation
-1. Clone this repository
+1. Fork this repository and then clone it
 2. Install Ruby (>= 2.0.0) using homebrew, rvm, or chocolatey is recommended
 `brew install ruby`
 3. Install Ruby Gems
