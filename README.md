@@ -1,5 +1,13 @@
 # SOURCE-year-end
 2015-2016 Year End Website
+In order to use this repository, you should be able to use the following things:
+* Terminal/Command Line
+* git
+* jekyll/ruby
+* HTML
+* javascript
+* css
+* liquid
 
 ## Installation
 1. Clone this repository
