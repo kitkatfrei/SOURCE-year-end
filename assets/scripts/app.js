@@ -402,11 +402,11 @@ $("#brownbags-modal-button").animatedModal({
     animatedOut:'fadeOutDown',
     color:'#fff'
 });
-$("#symposium-modal-button").click(function() {
-    $("#symposium-modal").removeClass('article-modal');
+$("#source-academy-modal-button").click(function() {
+    $("#source-academy-modal").removeClass('article-modal');
 });
-$("#symposium-modal-button").animatedModal({
-    modalTarget:'symposium-modal',
+$("#source-academy-modal-button").animatedModal({
+    modalTarget:'source-academy-modal',
     animatedIn:'fadeInUp',
     animatedOut:'fadeOutDown',
     color:'#fff'
@@ -436,14 +436,14 @@ $(document).ready(function() {
 var hostSite = "2015.sourcenonprofitconsulting.org";
 $("#share-client-spotlight").jsSocials({
     url: "http://" + hostSite + "/client-spotlight",
-    text: "SOURCE Client Spotlight - CTEC",
+    text: "SOURCE Client Spotlight - Pilgrim Place",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
     
 });
-$("#share-symposium").jsSocials({
-    url: "http://" + hostSite + "/symposium",
-    text: "SOURCE Symposium 2016",
+$("#share-source-academy").jsSocials({
+    url: "http://" + hostSite + "/source-academy",
+    text: "SOURCE Academy 2018",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });
