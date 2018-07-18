@@ -393,11 +393,20 @@ $("#client-spotlight-button").animatedModal({
     animatedOut:'fadeOutDown',
     color:'#fff'
 });
-$("#brownbags-modal-button").click(function() {
-    $("#brownbags-modal").removeClass('article-modal');
+$("#design-task-force-modal-button").click(function() {
+    $("#design-task-force-modal").removeClass('article-modal');
 });
-$("#brownbags-modal-button").animatedModal({
-    modalTarget:'brownbags-modal',
+$("#design-task-force-modal-button").animatedModal({
+    modalTarget:'design-task-force-modal',
+    animatedIn:'fadeInUp',
+    animatedOut:'fadeOutDown',
+    color:'#fff'
+});
+$("#nll-task-force-modal-button").click(function() {
+    $("#nll-task-force-modal").removeClass('article-modal');
+});
+$("#nll-task-force-modal-button").animatedModal({
+    modalTarget:'nll-task-force-modal',
     animatedIn:'fadeInUp',
     animatedOut:'fadeOutDown',
     color:'#fff'
@@ -447,9 +456,15 @@ $("#share-source-academy").jsSocials({
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });
-$("#share-brownbags").jsSocials({
-    url: "http://" + hostSite + "/brownbags",
-    text: "SOURCE Nonprofit Brownbags",
+$("#share-design-task-force").jsSocials({
+    url: "http://" + hostSite + "/design-task-force",
+    text: "SOURCE Nonprofit Design Task Force",
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
+    showCount: false
+});
+$("#share-nll-task-force").jsSocials({
+    url: "http://" + hostSite + "/nll-task-force",
+    text: "SOURCE Nonprofit Lunch and Learn Task Force",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });

@@ -374,10 +374,6 @@ div.signature h3 {
 .donors h2 {
     border-bottom: 3px solid;
 }
-#menu-nav ul li a.active {
-    font-weight: 600;
-    color: #418fab;
-}
 .larger-btn {
     font-size: 14px;
     font-weight: 500;
