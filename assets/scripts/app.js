@@ -442,7 +442,7 @@ $(document).ready(function() {
  
 });
 // social-sharing
-var hostSite = "2017.sourcenonprofitconsulting.org";
+var hostSite = "2018.sourcenonprofitconsulting.org";
 $("#share-client-spotlight").jsSocials({
     url: "http://" + hostSite + "/client-spotlight",
     text: "SOURCE Client Spotlight - Pilgrim Place",
